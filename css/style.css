@@ -18,13 +18,23 @@ a
 
 }
 
+h3, h1 {
+    border: 1px solid black;
+    
+}
+
+#new_contact_box {
+    text-align: center;
+    margin-top: 150px;
+}
+
 
 .card
 {
     z-index: 1;
     position: relative;
     width: 300px;
-    height:400px;
+    height:420px;
     margin: 0 auto;
     margin-top:100px;
     background-color: white;
@@ -43,7 +53,7 @@ a
 }
 .card.active
 {
-    height:490px;
+    height:550px;
 }
 .banner
 {
@@ -158,47 +168,6 @@ button.contact:focus
     outline: 0;
 }
 
-.social-media-banner
-{
-    width: 300px;
-    height: 50px;
-    margin-top: 25px;
-    text-align: center;
-    position: absolute;
-    -webkit-transition: all 1.5s ease-in-out;
-    -moz-transition:    all 1.5s ease-in-out;
-    -o-transition:      all 1.5s ease-in-out;
-    -ms-transition:     all 1.5 ease-in-out;
-}
-
-.social-media-banner.active
-{
-    opacity:0;
-    visibility: hidden;
-        -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition:    all 0.1s ease-in-out;
-    -o-transition:      all 0.1s ease-in-out;
-    -ms-transition:     all 0.1s ease-in-out;
-}
-
-.social-media-banner a i
-{
-    display: inline;
-    
-    width: auto;
-    margin-right:15px;
-    margin-left: 10px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition:    all 0.3s ease-in-out;
-    -o-transition:      all 0.3s ease-in-out;
-    -ms-transition:     all 0.3s ease-in-out;
-}
-
-.social-media-banner a i:hover
-{
-    color:#979da8;
-}
-
 .email-form
 {
     height: 0;
@@ -215,7 +184,7 @@ button.contact:focus
 
 .email-form.active
 {
-    height: 310px;
+    height: 400px;
     z-index: 3;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition:    all 1s ease-in-out;
@@ -273,5 +242,5 @@ button.contact:focus
 
 .email-form button
 {
-    margin-top: 60px;
+    margin-top: 15px;
 }
