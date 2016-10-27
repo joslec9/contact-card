@@ -18,6 +18,7 @@ $(document).ready(function () {
         if (front == 'display: none;') {
             front = '.card';
             back = '.descr';
+			back = '.phone';
         } else {
             front = '.descr';
             back = '.card';
@@ -27,7 +28,7 @@ $(document).ready(function () {
     });
 
     $('.contact').click(function (e) {
-        $('.card').toggleClass('active');
+        $('#card').toggleClass('active');
         $('.banner').toggleClass('active');
         $('.photo').toggleClass('active');
         $('.email-form').toggleClass('active');

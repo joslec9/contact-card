@@ -18,23 +18,38 @@ a
 
 }
 
-h3, h1 {
-    border: 1px solid black;
-    
+#new_contact{
+	width: 400px;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 20px;
+	margin-left: 20px;
 }
 
-#new_contact_box {
-    text-align: center;
-    margin-top: 150px;
+.card, .descr, .email, .phone {
+	width: 375px;
+	height: auto;
+	margin-bottom: 10px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.contact{
+	width: 375px;
+	height: 175px;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-bottom: 10px;
 }
 
 
-.card
+#card
 {
     z-index: 1;
     position: relative;
     width: 300px;
-    height:420px;
+    height: 340px;
     margin: 0 auto;
     margin-top:100px;
     background-color: white;
@@ -51,9 +66,9 @@ h3, h1 {
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.2);
 */
 }
-.card.active
+#card.active
 {
-    height:550px;
+    height: 575px;
 }
 .banner
 {
@@ -104,7 +119,7 @@ h3, h1 {
 {
     top:-80px;
 }
-.card ul
+#card ul
 {
     list-style: none;
     text-align: center;
@@ -118,13 +133,13 @@ h3, h1 {
     -ms-transition:     all 0.7s ease-in-out;
 }
 
-.card ul.active
+#card ul.active
 {
     opacity:0;
     visibility: hidden;
 }
 
-.card i
+#card i
 {
     font-size: 25px;
     display: inline-block;
