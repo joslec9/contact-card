@@ -4,9 +4,9 @@ $(document).ready(function () {
         var email = $('#email').val();
         var phone = $('#phone').val();
         var dscr = $('#comment').val();
-        $("#new_contact").append('<div class="new_contact"><h1 class="card">' + name + '</h1><h3 class="email">' + email + '</h3><h3 class="phone">' + phone + '</h3><h3 class="descr">' + dscr + '</h3><h3 class="card">Click for additional details</h3></div>');
+        $("#new_contact").append('<div class="new_contact"><h1 class="card">' + name + '</h1><h3 class="email">' + email + '</h3><h3 class="phone">' + phone + '</h3><h3 class="descr">' + dscr + '</h3><h5 class="revert">**click again hide details**</h5><h3 class="card">Click for additional details</h3></div>');
         $('.card').show();
-        $('.descr, .email, .phone').hide();
+        $('.descr, .email, .phone, .revert').hide();
         return false;
     });
     
@@ -16,14 +16,14 @@ $(document).ready(function () {
         var back;
         if (front == 'display: none;') {
             front = '.card';
-            back = '.email, .phone, .descr';
+            back = '.email, .phone, .descr, .revert';
         } else {
-            front = '.email, .phone, .descr';
+            front = '.email, .phone, .descr, .revert';
             back = '.card';
         };
         
         self.children(front).fadeOut(800,function(){
-            self.children(back).fadeIn(800).animate("bounce");
+            self.children(back).fadeIn(800);
         });
         
     });

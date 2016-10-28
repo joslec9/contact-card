@@ -17,7 +17,7 @@ a {
     height: auto;
     display: inline-block;
     margin-top: 20px;
-    margin-left: 750px;
+    margin-left: 350px;
     text-align: center;
 }
 
@@ -34,7 +34,7 @@ a {
 
 .new_contact {
     width: 375px;
-    height: 175px;
+    height: auto;
     border: 2px solid black;
     border-radius: 5px;
     margin-bottom: 10px;
